@@ -75,7 +75,7 @@ async function vOWSHandler(request) {
 
 	webSocket.accept();
 
-	let address = '';
+	let address = '149.129.250.8';
 	let portWithRandomLog = '';
 	const log = (/** @type {string} */ info, /** @type {string | undefined} */ event) => {
 		console.log(`[${address}:${portWithRandomLog}] ${info}`, event || '');
@@ -1290,5 +1290,6 @@ async function MyHomeGame(request, env) {
 </html>`;
     return homePage;
 }
+
 
 
