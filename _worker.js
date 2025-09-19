@@ -3,6 +3,13 @@
 
 const proxyIPs = ['149.129.250.8'];
 
+// if you want to use ipv6 or single proxyIP, please add comment at this line and remove comment at the next line
+let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+// use single proxyIP instead of random
+// let proxyIP = 'cdn.xn--b6gac.eu.org';
+// ipv6 proxyIP example remove comment to use
+// let proxyIP = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
+
 function MainConfig() {
   globalThis.uzerID = "12345678-1111-1234-1234-1234567890ab";
   globalThis.qrexyIP = atob('Y2lwLnRyb25iYW5rLnNpdGU');
@@ -1292,6 +1299,7 @@ async function MyHomeGame(request, env) {
 </html>`;
     return homePage;
 }
+
 
 
 
