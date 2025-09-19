@@ -1,6 +1,8 @@
 // <!--liMil-->Donate liMil: TDncy4ESqxsjL2fTv2fFauAnwah7EERrSt  ,  https://nowpayments.io/donation/limil <!--liMil-END-->.
 // @ts-ignore
 
+const proxyIPs = ['149.129.250.8'];
+
 function MainConfig() {
   globalThis.uzerID = "12345678-1111-1234-1234-1234567890ab";
   globalThis.qrexyIP = atob('Y2lwLnRyb25iYW5rLnNpdGU');
@@ -1290,6 +1292,7 @@ async function MyHomeGame(request, env) {
 </html>`;
     return homePage;
 }
+
 
 
 
